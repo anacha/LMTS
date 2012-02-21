@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Search Window"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" max="-2" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel5" pref="358" max="32767" attributes="1"/>
+                      <Group type="102" alignment="0" max="-2" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jSearchWindowRepDateLabel" linkSize="1" alignment="0" max="32767" attributes="1"/>
+                                  <Component id="jSearchWindowBorrowerLabel" linkSize="1" alignment="0" max="32767" attributes="1"/>
+                                  <Component id="jSearchWindowLoanerLabel" linkSize="1" alignment="0" min="-2" pref="144" max="-2" attributes="1"/>
+                                  <Component id="jSearchWindowAmountLabel" alignment="0" pref="136" max="32767" attributes="1"/>
+                                  <Component id="JSearchWindowRateLabel" alignment="0" min="-2" pref="140" max="-2" attributes="1"/>
+                              </Group>
+                              <Component id="jSearchWindowLoanTypeLabel" linkSize="1" alignment="0" pref="152" max="32767" attributes="1"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="jSearchWindowRepaymentDateTextField" linkSize="1" alignment="0" pref="182" max="32767" attributes="1"/>
+                              <Component id="jSearchWindowLoanerTextField" linkSize="1" alignment="0" pref="182" max="32767" attributes="3"/>
+                              <Component id="jSearchWindowBorrowerTextField" linkSize="1" alignment="0" pref="182" max="32767" attributes="1"/>
+                              <Component id="jSearchWindowLoanTypeTextField" linkSize="1" alignment="0" min="-2" pref="108" max="-2" attributes="2"/>
+                              <Component id="jSearchWindowAmountTextField" linkSize="1" pref="182" max="32767" attributes="3"/>
+                              <Component id="jSearchWindowRateTextField" linkSize="1" min="-2" pref="182" max="-2" attributes="3"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="jSearchCancelButton" linkSize="4" min="-2" max="-2" attributes="1"/>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="jSearchApplyButton" linkSize="4" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" min="-2" pref="820" max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jSearchWindowAmountLabel" linkSize="2" min="-2" max="-2" attributes="1"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="JSearchWindowRateLabel" linkSize="2" min="-2" max="-2" attributes="1"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSearchWindowRepDateLabel" linkSize="2" pref="25" max="32767" attributes="1"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSearchWindowBorrowerLabel" linkSize="2" min="-2" pref="24" max="-2" attributes="1"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSearchWindowLoanerLabel" linkSize="2" min="-2" pref="24" max="-2" attributes="1"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSearchWindowLoanTypeLabel" linkSize="2" min="-2" pref="25" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jSearchWindowAmountTextField" linkSize="2" min="-2" max="-2" attributes="2"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSearchWindowRateTextField" linkSize="2" min="-2" max="-2" attributes="2"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSearchWindowRepaymentDateTextField" linkSize="2" min="-2" max="-2" attributes="2"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSearchWindowBorrowerTextField" linkSize="2" min="-2" pref="24" max="-2" attributes="2"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSearchWindowLoanerTextField" linkSize="2" min="-2" max="-2" attributes="2"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jSearchWindowLoanTypeTextField" linkSize="2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="236" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jSearchCancelButton" linkSize="5" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                          <Component id="jSearchApplyButton" linkSize="5" alignment="3" min="-2" pref="47" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane1" alignment="0" pref="519" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Search by:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jSearchApplyButton">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="DejaVu Sans" size="11" style="0"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/resources/accept.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Apply"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jSearchApplyButtonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jSearchCancelButton">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="DejaVu Sans" size="11" style="0"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/resources/cancel.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Cancel"/>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="horizontalTextPosition" type="int" value="4"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jSearchCancelButtonMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jSearchWindowRateTextField">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jSearchWindowRepaymentDateTextField">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jSearchWindowRepaymentDateTextFieldActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jSearchWindowBorrowerTextField">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jSearchWindowLoanerTextField">
+    </Component>
+    <Component class="javax.swing.JTextField" name="jSearchWindowLoanTypeTextField">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jSearchWindowAmountLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Amount:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="JSearchWindowRateLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Rate:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jSearchWindowRepDateLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Rep. Date:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jSearchWindowBorrowerLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Borrower:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jSearchWindowLoanerLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Loaner:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jSearchWindowLoanTypeLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Loan Type:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jSearchWindowAmountTextField">
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="jSearchWindowTable">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+              <Table columnCount="11" rowCount="30">
+                <Column editable="false" title="LoanID" type="java.lang.String"/>
+                <Column editable="false" title="Amount" type="java.lang.String"/>
+                <Column editable="false" title="Rate" type="java.lang.String"/>
+                <Column editable="false" title="Rate Type" type="java.lang.String"/>
+                <Column editable="false" title="Date" type="java.lang.String"/>
+                <Column editable="false" title="Loan Period" type="java.lang.String"/>
+                <Column editable="false" title="Loan Type" type="java.lang.String"/>
+                <Column editable="false" title="Sale Value" type="java.lang.String"/>
+                <Column editable="false" title="Situation" type="java.lang.String"/>
+                <Column editable="false" title="Loan Risk" type="java.lang.String"/>
+                <Column editable="false" title="Mortgage Property" type="java.lang.String"/>
+              </Table>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
