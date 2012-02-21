@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1602,2329" id="testmysql" metadata="uml2-1.0" initialized="true" scrolledX="625" scrolledY="1156" tag="1000" key="32303037303533312D31303030204C4D54532F6D656C676572617468">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.9/@sourceConnections.0" name="ModifyLoanerInfoWindow" location="1800,945" size="205,103" id="/ModifyLoanerInfoWindow" runTimeClassModel="main([Ljava.lang.String;),ModifyLoanerInfoWindow(),strings">
+    <children xsi:type="editmodel:CompartmentEditModel" size="117,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="strings" id="/ModifyLoanerInfoWindow#strings"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="154,36">
+      <children xsi:type="editmodel:MethodEditModel" name="ModifyLoanerInfoWindow" id="/ModifyLoanerInfoWindow#ModifyLoanerInfoWindow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="/ModifyLoanerInfoWindow#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/ModifyLoanerInfoWindow-Standard::Call->/LoanManagerController*/ModifyLoanerInfoWindow-Standard::Instantiate->/LoanManagerController*/ModifyLoanerInfoWindow-Soyatec::Import->/LoanManagerController" source="//@children.0" target="//@children.2" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,31" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="193,76"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.10" name="LoanPortfolio" location="1035,934" size="128,247" id="testmysql/LoanPortfolio" runTimeClassModel="Do_DB_Query(Ljava.lang.String;),doCreateObject(ILjava.lang.String;),removeLoan(),conn,Do_DB_Update(Ljava.lang.String;),stmt,rs,createQuery(ILjava.lang.String;),modifyLoan(),addLoan(),LoanPortfolio()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="conn" id="testmysql/LoanPortfolio#conn"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rs" id="testmysql/LoanPortfolio#rs"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="stmt" id="testmysql/LoanPortfolio#stmt"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="105,144">
+      <children xsi:type="editmodel:MethodEditModel" name="Do_DB_Query" id="testmysql/LoanPortfolio#Do_DB_Query(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Do_DB_Update" id="testmysql/LoanPortfolio#Do_DB_Update(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="LoanPortfolio" id="testmysql/LoanPortfolio#LoanPortfolio()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addLoan" id="testmysql/LoanPortfolio#addLoan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createQuery" id="testmysql/LoanPortfolio#createQuery(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doCreateObject" id="testmysql/LoanPortfolio#doCreateObject(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="modifyLoan" id="testmysql/LoanPortfolio#modifyLoan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeLoan" id="testmysql/LoanPortfolio#removeLoan()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="testmysql/LoanPortfolio@lp+/LoanManagerController@" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="lp" location="128,92" id="testmysql/LoanPortfolio@lp+/LoanManagerController@|testmysql/LoanPortfolio#lp" attachSource="true" multiplicityLabel="//@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - lp" location="1170,1005" size="18,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1170,1033" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,148" id="testmysql/LoanPortfolio@lp+/LoanManagerController@|/LoanManagerController#"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0 //@children.0/@sourceConnections.0 //@children.4/@sourceConnections.0 //@children.5/@sourceConnections.0 //@children.6/@sourceConnections.0 //@children.10/@sourceConnections.0 //@children.7/@sourceConnections.0 //@children.9/@sourceConnections.1 //@children.11/@sourceConnections.0 //@children.8/@sourceConnections.1 //@children.3/@sourceConnections.0" name="LoanManagerController" location="1482,889" size="193,337" id="/LoanManagerController" runTimeClassModel="doSort(Ljava.lang.String;I),doPackageLoan(Ljava.lang.String;Z),doModifyLoanerInfo(ILjava.lang.String;Ljava.lang.String;),doDeleteLoaner(I),packageLoadLoanList(),doCreateLoaner(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),doAccept([Ljava.lang.String;),doOrganize(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),doAskReport(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),packageLoanAutoSearch(Ljava.lang.String;),doSearch(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;),doViewArchive(Ljava.lang.String;Ljava.lang.String;Z),doUpdatePortfolio(Ljava.io.File;Ljava.io.BufferedReader;),LoanManagerController(),doOptimization(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Z[Ljava.lang.String;),doUpdate([Ljava.lang.String;I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="153,288">
+      <children xsi:type="editmodel:MethodEditModel" name="LoanManagerController" id="/LoanManagerController#LoanManagerController()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doAccept" id="/LoanManagerController#doAccept([Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doAskReport" id="/LoanManagerController#doAskReport(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doCreateLoaner" id="/LoanManagerController#doCreateLoaner(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doDeleteLoaner" id="/LoanManagerController#doDeleteLoaner(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doModifyLoanerInfo" id="/LoanManagerController#doModifyLoanerInfo(ILjava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doOptimization" id="/LoanManagerController#doOptimization(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Z[Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doOrganize" id="/LoanManagerController#doOrganize(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doPackageLoan" location="1285,1045" id="/LoanManagerController#doPackageLoan(Ljava.lang.String;Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doSearch" id="/LoanManagerController#doSearch(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doSort" id="/LoanManagerController#doSort(Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doUpdate" id="/LoanManagerController#doUpdate([Ljava.lang.String;I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doUpdatePortfolio" id="/LoanManagerController#doUpdatePortfolio(Ljava.io.File;Ljava.io.BufferedReader;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doViewArchive" id="/LoanManagerController#doViewArchive(Ljava.lang.String;Ljava.lang.String;Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="packageLoadLoanList" id="/LoanManagerController#packageLoadLoanList()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="packageLoanAutoSearch" id="/LoanManagerController#packageLoanAutoSearch(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/LoanManagerController@c+/ModifyLoanerInfoWindow@" source="//@children.2" target="//@children.0" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="c" location="193,107" id="/LoanManagerController@c+/ModifyLoanerInfoWindow@|/LoanManagerController#c" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - c" location="1682,975" size="16,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1682,1003" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,51" id="/LoanManagerController@c+/ModifyLoanerInfoWindow@|/ModifyLoanerInfoWindow#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/LoanManagerController@c+/SearchWindow@" source="//@children.2" target="//@children.4" targetEnd="//@children.2/@sourceConnections.1/@children.2" label="//@children.2/@sourceConnections.1/@children.0" sourceEnd="//@children.2/@sourceConnections.1/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="c" location="127,0" id="/LoanManagerController@c+/SearchWindow@|/LoanManagerController#c" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - c" location="1616,868" size="16,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1596,868" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="64,103" id="/LoanManagerController@c+/SearchWindow@|/SearchWindow#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/LoanManagerController@c+/FileExplorerWindow@" source="//@children.2" target="//@children.5" targetEnd="//@children.2/@sourceConnections.2/@children.2" label="//@children.2/@sourceConnections.2/@children.0" sourceEnd="//@children.2/@sourceConnections.2/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="c" location="103,337" id="/LoanManagerController@c+/FileExplorerWindow@|/LoanManagerController#c" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - c" location="1592,1233" size="16,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1572,1233" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="85,0" id="/LoanManagerController@c+/FileExplorerWindow@|/FileExplorerWindow#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/LoanManagerController@c+/MultInputWindow@" source="//@children.2" target="//@children.6" targetEnd="//@children.2/@sourceConnections.3/@children.2" label="//@children.2/@sourceConnections.3/@children.0" sourceEnd="//@children.2/@sourceConnections.3/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="c" location="0,10" id="/LoanManagerController@c+/MultInputWindow@|/LoanManagerController#c" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.3/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - c" location="1459,906" size="16,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1469,878" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="143,85" id="/LoanManagerController@c+/MultInputWindow@|/MultInputWindow#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/LoanManagerController@c+/ValidateChangesWindow@" source="//@children.2" target="//@children.10" targetEnd="//@children.2/@sourceConnections.4/@children.2" label="//@children.2/@sourceConnections.4/@children.0" sourceEnd="//@children.2/@sourceConnections.4/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="c" location="193,10" id="/LoanManagerController@c+/ValidateChangesWindow@|/LoanManagerController#c" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.4/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.4/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - c" location="1682,906" size="16,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1682,878" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="10,103" id="/LoanManagerController@c+/ValidateChangesWindow@|/ValidateChangesWindow#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/LoanManagerController@c+/SortWindow@" source="//@children.2" target="//@children.7" targetEnd="//@children.2/@sourceConnections.5/@children.2" label="//@children.2/@sourceConnections.5/@children.0" sourceEnd="//@children.2/@sourceConnections.5/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="c" location="193,241" id="/LoanManagerController@c+/SortWindow@|/LoanManagerController#c" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.5/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.5/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - c" location="1682,1109" size="16,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1682,1137" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,31" id="/LoanManagerController@c+/SortWindow@|/SortWindow#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/LoanManagerController@c+/MainWindow@" source="//@children.2" target="//@children.9" targetEnd="//@children.2/@sourceConnections.6/@children.2" label="//@children.2/@sourceConnections.6/@children.0" sourceEnd="//@children.2/@sourceConnections.6/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="c" location="10,0" id="/LoanManagerController@c+/MainWindow@|/LoanManagerController#c" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.6/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.6/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - c" location="1499,868" size="16,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1479,868" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="125,93" id="/LoanManagerController@c+/MainWindow@|/MainWindow#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/LoanManagerController@c+/RemoveLoanerWindow@" source="//@children.2" target="//@children.11" targetEnd="//@children.2/@sourceConnections.7/@children.2" label="//@children.2/@sourceConnections.7/@children.0" sourceEnd="//@children.2/@sourceConnections.7/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="c" location="0,12" id="/LoanManagerController@c+/RemoveLoanerWindow@|/LoanManagerController#c" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.7/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.7/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - c" location="1459,880" size="16,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1469,908" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="191,91" id="/LoanManagerController@c+/RemoveLoanerWindow@|/RemoveLoanerWindow#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/LoanManagerController@c+/AskReportWindow@" source="//@children.2" target="//@children.8" targetEnd="//@children.2/@sourceConnections.8/@children.2" label="//@children.2/@sourceConnections.8/@children.0" sourceEnd="//@children.2/@sourceConnections.8/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="c" location="0,327" id="/LoanManagerController@c+/AskReportWindow@|/LoanManagerController#c" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.8/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.8/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - c" location="1459,1195" size="16,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1469,1223" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="148,0" id="/LoanManagerController@c+/AskReportWindow@|/AskReportWindow#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="/LoanManagerController@c+/OrganiseWindow@" source="//@children.2" target="//@children.3" targetEnd="//@children.2/@sourceConnections.9/@children.2" label="//@children.2/@sourceConnections.9/@children.0" sourceEnd="//@children.2/@sourceConnections.9/@children.1" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="c" location="193,10" id="/LoanManagerController@c+/OrganiseWindow@|/LoanManagerController#c" attachSource="true" multiplicityLabel="//@children.2/@sourceConnections.9/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.9/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - c" location="1682,906" size="16,14" anchorKind="FirstPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="1" location="1682,878" size="6,14" anchorKind="FirstPart"/>
+      </children>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="10,103" id="/LoanManagerController@c+/OrganiseWindow@|/OrganiseWindow#"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/LoanManagerController-Standard::Call->testmysql/LoanPortfolio*/LoanManagerController-Standard::Instantiate->testmysql/LoanPortfolio*/LoanManagerController-Soyatec::Import->testmysql/LoanPortfolio" source="//@children.2" target="//@children.1" targetEnd="//@children.2/@sourceConnections.10/@children.2" label="//@children.2/@sourceConnections.10/@children.0" sourceEnd="//@children.2/@sourceConnections.10/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,168" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="128,123"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/LoanManagerController-Standard::Call->/ValidateChangesWindow*/LoanManagerController-Standard::Instantiate->/ValidateChangesWindow*/LoanManagerController-Soyatec::Import->/ValidateChangesWindow" source="//@children.2" target="//@children.10" targetEnd="//@children.2/@sourceConnections.11/@children.2" label="//@children.2/@sourceConnections.11/@children.0" sourceEnd="//@children.2/@sourceConnections.11/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="178,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,98"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.9 //@children.9/@sourceConnections.2" name="OrganiseWindow" location="1785,645" size="151,103" id="/OrganiseWindow" runTimeClassModel="main([Ljava.lang.String;),OrganiseWindow(),Add_Row(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="114,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Add_Row" location="46,85" id="/OrganiseWindow#Add_Row(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="OrganiseWindow" id="/OrganiseWindow#OrganiseWindow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="/OrganiseWindow#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/OrganiseWindow-Standard::Call->/LoanManagerController*/OrganiseWindow-Standard::Instantiate->/LoanManagerController*/OrganiseWindow-Soyatec::Import->/LoanManagerController" source="//@children.3" target="//@children.2" targetEnd="//@children.3/@sourceConnections.0/@children.2" label="//@children.3/@sourceConnections.0/@children.0" sourceEnd="//@children.3/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,98" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="178,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.1 //@children.9/@sourceConnections.4" name="SearchWindow" location="1545,645" size="139,103" id="/SearchWindow" runTimeClassModel="main([Ljava.lang.String;),Add_Row(I),SearchWindow()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="105,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Add_Row" location="1150,400" id="/SearchWindow#Add_Row(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="SearchWindow" id="/SearchWindow#SearchWindow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="/SearchWindow#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/SearchWindow-Standard::Call->/LoanManagerController*/SearchWindow-Standard::Instantiate->/LoanManagerController*/SearchWindow-Soyatec::Import->/LoanManagerController" source="//@children.4" target="//@children.2" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="44,103" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="104,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.2 //@children.9/@sourceConnections.7 //@children.8/@sourceConnections.0" name="FileExplorerWindow" location="1500,1347" size="172,121" id="/FileExplorerWindow" runTimeClassModel="main([Ljava.lang.String;),ViewfileSaver(Ljava.util.ArrayList;Ljava.lang.String;Ljava.lang.String;),FileExplorerWindow(),reason(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,72">
+      <children xsi:type="editmodel:MethodEditModel" name="FileExplorerWindow" id="/FileExplorerWindow#FileExplorerWindow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ViewfileSaver" id="/FileExplorerWindow#ViewfileSaver(Ljava.util.ArrayList;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="/FileExplorerWindow#main([Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="reason" id="/FileExplorerWindow#reason(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/FileExplorerWindow-Standard::Call->/LoanManagerController*/FileExplorerWindow-Standard::Instantiate->/LoanManagerController*/FileExplorerWindow-Soyatec::Import->/LoanManagerController" source="//@children.5" target="//@children.2" targetEnd="//@children.5/@sourceConnections.0/@children.2" label="//@children.5/@sourceConnections.0/@children.0" sourceEnd="//@children.5/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="105,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="136,337"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.3 //@children.9/@sourceConnections.3" name="MultInputWindow" location="1035,645" size="153,85" id="/MultInputWindow" runTimeClassModel="main([Ljava.lang.String;),MultInputWindow()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="112,36">
+      <children xsi:type="editmodel:MethodEditModel" name="MultInputWindow" id="/MultInputWindow#MultInputWindow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="/MultInputWindow#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/MultInputWindow-Standard::Call->/LoanManagerController*/MultInputWindow-Standard::Instantiate->/LoanManagerController*/MultInputWindow-Soyatec::Import->/LoanManagerController" source="//@children.6" target="//@children.2" targetEnd="//@children.6/@sourceConnections.0/@children.2" label="//@children.6/@sourceConnections.0/@children.0" sourceEnd="//@children.6/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="153,80" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="15,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.5 //@children.9/@sourceConnections.8" name="SortWindow" location="1800,1110" size="120,103" id="/SortWindow" runTimeClassModel="main([Ljava.lang.String;),Add_Row(I),SortWindow()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="90,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Add_Row" id="/SortWindow#Add_Row(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="SortWindow" id="/SortWindow#SortWindow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="/SortWindow#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/SortWindow-Standard::Call->/LoanManagerController*/SortWindow-Standard::Instantiate->/LoanManagerController*/SortWindow-Soyatec::Import->/LoanManagerController" source="//@children.7" target="//@children.2" targetEnd="//@children.7/@sourceConnections.0/@children.2" label="//@children.7/@sourceConnections.0/@children.0" sourceEnd="//@children.7/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,51" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="193,272"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.8 //@children.9/@sourceConnections.6" name="AskReportWindow" location="995,1289" size="158,103" id="/AskReportWindow" runTimeClassModel="main([Ljava.lang.String;),AskReportWindow(),strings">
+    <children xsi:type="editmodel:CompartmentEditModel" size="117,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="strings" id="/AskReportWindow#strings"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,36">
+      <children xsi:type="editmodel:MethodEditModel" name="AskReportWindow" id="/AskReportWindow#AskReportWindow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="/AskReportWindow#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/AskReportWindow-Standard::Call->/FileExplorerWindow*/AskReportWindow-Standard::Instantiate->/FileExplorerWindow*/AskReportWindow-Soyatec::Import->/FileExplorerWindow" source="//@children.8" target="//@children.5" targetEnd="//@children.8/@sourceConnections.0/@children.2" label="//@children.8/@sourceConnections.0/@children.0" sourceEnd="//@children.8/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="158,80" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,22"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/AskReportWindow-Standard::Call->/LoanManagerController*/AskReportWindow-Standard::Instantiate->/LoanManagerController*/AskReportWindow-Soyatec::Import->/LoanManagerController" source="//@children.8" target="//@children.2" targetEnd="//@children.8/@sourceConnections.1/@children.2" label="//@children.8/@sourceConnections.1/@children.0" sourceEnd="//@children.8/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="158,15" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="15,337"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.6" name="MainWindow" location="1335,645" size="125,103" id="/MainWindow" runTimeClassModel="main([Ljava.lang.String;),Add_Row(II),MainWindow()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="92,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Add_Row" id="/MainWindow#Add_Row(II)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="MainWindow" id="/MainWindow#MainWindow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="/MainWindow#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/MainWindow-Standard::Call->/ModifyLoanerInfoWindow*/MainWindow-Standard::Instantiate->/ModifyLoanerInfoWindow" source="//@children.9" target="//@children.0" targetEnd="//@children.9/@sourceConnections.0/@children.2" label="//@children.9/@sourceConnections.0/@children.0" sourceEnd="//@children.9/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call»" size="84,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="125,88" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="16,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/MainWindow-Standard::Call->/LoanManagerController*/MainWindow-Standard::Instantiate->/LoanManagerController*/MainWindow-Soyatec::Import->/LoanManagerController" source="//@children.9" target="//@children.2" targetEnd="//@children.9/@sourceConnections.1/@children.2" label="//@children.9/@sourceConnections.1/@children.0" sourceEnd="//@children.9/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="115,103" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,21"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/MainWindow-Standard::Call->/OrganiseWindow*/MainWindow-Standard::Instantiate->/OrganiseWindow" source="//@children.9" target="//@children.3" targetEnd="//@children.9/@sourceConnections.2/@children.2" label="//@children.9/@sourceConnections.2/@children.0" sourceEnd="//@children.9/@sourceConnections.2/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call»" size="84,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="125,51" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,51"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/MainWindow-Standard::Call->/MultInputWindow*/MainWindow-Standard::Instantiate->/MultInputWindow" source="//@children.9" target="//@children.6" targetEnd="//@children.9/@sourceConnections.3/@children.2" label="//@children.9/@sourceConnections.3/@children.0" sourceEnd="//@children.9/@sourceConnections.3/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call»" size="84,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,42" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="153,42"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/MainWindow-Standard::Call->/SearchWindow*/MainWindow-Standard::Instantiate->/SearchWindow" source="//@children.9" target="//@children.4" targetEnd="//@children.9/@sourceConnections.4/@children.2" label="//@children.9/@sourceConnections.4/@children.0" sourceEnd="//@children.9/@sourceConnections.4/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call»" size="84,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="125,51" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,51"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/MainWindow-Standard::Call->/RemoveLoanerWindow*/MainWindow-Standard::Instantiate->/RemoveLoanerWindow" source="//@children.9" target="//@children.11" targetEnd="//@children.9/@sourceConnections.5/@children.2" label="//@children.9/@sourceConnections.5/@children.0" sourceEnd="//@children.9/@sourceConnections.5/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call»" size="84,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,89" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="178,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/MainWindow-Standard::Call->/AskReportWindow*/MainWindow-Standard::Instantiate->/AskReportWindow" source="//@children.9" target="//@children.8" targetEnd="//@children.9/@sourceConnections.6/@children.2" label="//@children.9/@sourceConnections.6/@children.0" sourceEnd="//@children.9/@sourceConnections.6/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call»" size="84,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="36,103" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="105,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/MainWindow-Standard::Call->/FileExplorerWindow*/MainWindow-Standard::Instantiate->/FileExplorerWindow*/MainWindow-Soyatec::Import->/FileExplorerWindow" source="//@children.9" target="//@children.5" targetEnd="//@children.9/@sourceConnections.7/@children.2" label="//@children.9/@sourceConnections.7/@children.0" sourceEnd="//@children.9/@sourceConnections.7/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="76,103" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="70,0"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/MainWindow-Standard::Call->/SortWindow*/MainWindow-Standard::Instantiate->/SortWindow" source="//@children.9" target="//@children.7" targetEnd="//@children.9/@sourceConnections.8/@children.2" label="//@children.9/@sourceConnections.8/@children.0" sourceEnd="//@children.9/@sourceConnections.8/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call»" size="84,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="114,103" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="9,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.4 //@children.2/@sourceConnections.11" name="ValidateChangesWindow" location="1800,787" size="201,103" id="/ValidateChangesWindow" runTimeClassModel="main([Ljava.lang.String;),ValidateChangesWindow([Ljava.lang.String;ILjava.lang.String;),ValidateChangesWindow()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="151,54">
+      <children xsi:type="editmodel:MethodEditModel" name="ValidateChangesWindow" id="/ValidateChangesWindow#ValidateChangesWindow([Ljava.lang.String;ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="ValidateChangesWindow" location="550,580" id="/ValidateChangesWindow#ValidateChangesWindow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="/ValidateChangesWindow#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/ValidateChangesWindow-Standard::Call->/LoanManagerController*/ValidateChangesWindow-Standard::Instantiate->/LoanManagerController*/ValidateChangesWindow-Soyatec::Import->/LoanManagerController" source="//@children.10" target="//@children.2" targetEnd="//@children.10/@sourceConnections.0/@children.2" label="//@children.10/@sourceConnections.0/@children.0" sourceEnd="//@children.10/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="30,103" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="193,41"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.7 //@children.9/@sourceConnections.5" name="RemoveLoanerWindow" location="1035,810" size="191,103" id="/RemoveLoanerWindow" runTimeClassModel="main([Ljava.lang.String;),RemoveLoanerWindow(),strings">
+    <children xsi:type="editmodel:CompartmentEditModel" size="117,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="strings" id="/RemoveLoanerWindow#strings"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="143,36">
+      <children xsi:type="editmodel:MethodEditModel" name="RemoveLoanerWindow" id="/RemoveLoanerWindow#RemoveLoanerWindow()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="/RemoveLoanerWindow#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/RemoveLoanerWindow-Standard::Call->/LoanManagerController*/RemoveLoanerWindow-Standard::Instantiate->/LoanManagerController*/RemoveLoanerWindow-Soyatec::Import->/LoanManagerController" source="//@children.11" target="//@children.2" targetEnd="//@children.11/@sourceConnections.0/@children.2" label="//@children.11/@sourceConnections.0/@children.0" sourceEnd="//@children.11/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Call, Import»" size="119,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="191,71" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="15,0"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.14/@sourceConnections.0" name="Loan" location="484,1759" size="162,355" id="testmysql/Loan" runTimeClassModel="modifyLoanInfo(IFLjava.lang.String;Ljava.lang.String;ILtestmysql.Loaner;Ltestmysql.Borrower;Ljava.lang.String;FLjava.lang.String;),loanAmount,borrowerID,saleValue,Loan(IFLjava.lang.String;Ljava.lang.String;ILtestmysql.Loaner;Ltestmysql.Borrower;Ljava.lang.String;FLjava.lang.String;),loanPeriod,date,mortgageProperty,CalculateLoanRisk(),loanerID,calculateSale(),loanType,loanRateType,loanRisk,loanRate,loanID,situation">
+    <children xsi:type="editmodel:CompartmentEditModel" size="139,234">
+      <children xsi:type="editmodel:AttributeEditModel" name="borrowerID" id="testmysql/Loan#borrowerID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="date" id="testmysql/Loan#date"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanAmount" id="testmysql/Loan#loanAmount"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanID" id="testmysql/Loan#loanID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanPeriod" id="testmysql/Loan#loanPeriod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanRate" id="testmysql/Loan#loanRate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanRateType" id="testmysql/Loan#loanRateType"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanRisk" id="testmysql/Loan#loanRisk"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanType" id="testmysql/Loan#loanType"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanerID" id="testmysql/Loan#loanerID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mortgageProperty" id="testmysql/Loan#mortgageProperty"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="saleValue" id="testmysql/Loan#saleValue"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="situation" id="testmysql/Loan#situation"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,72">
+      <children xsi:type="editmodel:MethodEditModel" name="CalculateLoanRisk" id="testmysql/Loan#CalculateLoanRisk()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Loan" id="testmysql/Loan#Loan(IFLjava.lang.String;Ljava.lang.String;ILtestmysql.Loaner;Ltestmysql.Borrower;Ljava.lang.String;FLjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculateSale" id="testmysql/Loan#calculateSale()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="modifyLoanInfo" id="testmysql/Loan#modifyLoanInfo(IFLjava.lang.String;Ljava.lang.String;ILtestmysql.Loaner;Ltestmysql.Borrower;Ljava.lang.String;FLjava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="testmysql/Loan-Standard::Call->testmysql/Borrower*testmysql/Loan-Soyatec::Import->testmysql/Borrower" source="//@children.12" target="//@children.15" targetEnd="//@children.12/@sourceConnections.0/@children.2" label="//@children.12/@sourceConnections.0/@children.0" sourceEnd="//@children.12/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,51" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="124,70"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="testmysql/Loan-Standard::Call->testmysql/Loaner*testmysql/Loan-Soyatec::Import->testmysql/Loaner" source="//@children.12" target="//@children.13" targetEnd="//@children.12/@sourceConnections.1/@children.2" label="//@children.12/@sourceConnections.1/@children.0" sourceEnd="//@children.12/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,260" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="143,69"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.12/@sourceConnections.1" name="Loaner" location="165,1950" size="143,139" id="testmysql/Loaner" runTimeClassModel="loanerID,phoneNumber,modifyLoanerInfo(Ljava.lang.String;Ljava.lang.String;),loanerName,loanerContact">
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="loanerContact" id="testmysql/Loaner#loanerContact"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanerID" id="testmysql/Loaner#loanerID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanerName" id="testmysql/Loaner#loanerName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="phoneNumber" id="testmysql/Loaner#phoneNumber"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="114,18">
+      <children xsi:type="editmodel:MethodEditModel" name="modifyLoanerInfo" id="testmysql/Loaner#modifyLoanerInfo(Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PackageLoan" location="825,1785" size="180,247" id="testmysql/PackageLoan" runTimeClassModel="calculatePackageProfit(),risk,packageProfit,addLoan(Ltestmysql.Loan;),PackageLoan(),removeLoan(Ltestmysql.Loan;),packageValue,remainingMonths,calculatePackageValue(),calculateRisk(),calculateRemainingMonths()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="117,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="packageProfit" id="testmysql/PackageLoan#packageProfit"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="packageValue" id="testmysql/PackageLoan#packageValue"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="remainingMonths" id="testmysql/PackageLoan#remainingMonths"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="risk" id="testmysql/PackageLoan#risk"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="157,126">
+      <children xsi:type="editmodel:MethodEditModel" name="PackageLoan" id="testmysql/PackageLoan#PackageLoan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addLoan" id="testmysql/PackageLoan#addLoan(Ltestmysql.Loan;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculatePackageProfit" id="testmysql/PackageLoan#calculatePackageProfit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculatePackageValue" id="testmysql/PackageLoan#calculatePackageValue()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculateRemainingMonths" id="testmysql/PackageLoan#calculateRemainingMonths()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculateRisk" id="testmysql/PackageLoan#calculateRisk()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeLoan" id="testmysql/PackageLoan#removeLoan(Ltestmysql.Loan;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="testmysql/PackageLoan-Standard::Call->testmysql/Loan*testmysql/PackageLoan-Soyatec::Access->testmysql/Loan*testmysql/PackageLoan-Soyatec::Import->testmysql/Loan" source="//@children.14" target="//@children.12" targetEnd="//@children.14/@sourceConnections.0/@children.2" label="//@children.14/@sourceConnections.0/@children.0" sourceEnd="//@children.14/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Access, Import»" size="107,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,123" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="162,149"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.12/@sourceConnections.0" name="Borrower" location="165,1740" size="124,121" id="testmysql/Borrower" runTimeClassModel="name,Borrower(),getBorrowerID(),riskBorrower">
+    <children xsi:type="editmodel:CompartmentEditModel" size="100,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="testmysql/Borrower#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="riskBorrower" id="testmysql/Borrower#riskBorrower"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="101,36">
+      <children xsi:type="editmodel:MethodEditModel" name="Borrower" id="testmysql/Borrower#Borrower()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBorrowerID" id="testmysql/Borrower#getBorrowerID()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

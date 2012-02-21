@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="testmysql3" size="1029,1258" id="testmysql" metadata="uml2-1.0" initialized="true" scrolledY="233" tag="1000" key="32303037303533312D31303030204C4D54532F6D656C676572617468">
+  <children xsi:type="editmodel:ClassEditModel" name="LoanPortfolio" location="50,991" size="128,247" id="testmysql/LoanPortfolio">
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="conn" id="testmysql/LoanPortfolio#conn"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rs" id="testmysql/LoanPortfolio#rs"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="stmt" id="testmysql/LoanPortfolio#stmt"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="105,144">
+      <children xsi:type="editmodel:MethodEditModel" name="Do_DB_Query" id="testmysql/LoanPortfolio#Do_DB_Query(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Do_DB_Update" id="testmysql/LoanPortfolio#Do_DB_Update(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="LoanPortfolio" id="testmysql/LoanPortfolio#LoanPortfolio()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addLoan" id="testmysql/LoanPortfolio#addLoan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="createQuery" id="testmysql/LoanPortfolio#createQuery(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="doCreateObject" id="testmysql/LoanPortfolio#doCreateObject(ILjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="modifyLoan" id="testmysql/LoanPortfolio#modifyLoan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeLoan" id="testmysql/LoanPortfolio#removeLoan()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PackageLoan" location="735,477" size="180,247" id="testmysql/PackageLoan">
+    <children xsi:type="editmodel:CompartmentEditModel" size="117,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="packageProfit" id="testmysql/PackageLoan#packageProfit"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="packageValue" id="testmysql/PackageLoan#packageValue"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="remainingMonths" id="testmysql/PackageLoan#remainingMonths"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="risk" id="testmysql/PackageLoan#risk"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="157,126">
+      <children xsi:type="editmodel:MethodEditModel" name="PackageLoan" id="testmysql/PackageLoan#PackageLoan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="addLoan" id="testmysql/PackageLoan#addLoan(Ltestmysql.Loan;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculatePackageProfit" id="testmysql/PackageLoan#calculatePackageProfit()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculatePackageValue" id="testmysql/PackageLoan#calculatePackageValue()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculateRemainingMonths" id="testmysql/PackageLoan#calculateRemainingMonths()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculateRisk" id="testmysql/PackageLoan#calculateRisk()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="removeLoan" id="testmysql/PackageLoan#removeLoan(Ltestmysql.Loan;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="testmysql/PackageLoan-Standard::Call->testmysql/Loan*testmysql/PackageLoan-Soyatec::Access->testmysql/Loan*testmysql/PackageLoan-Soyatec::Import->testmysql/Loan" source="//@children.1" target="//@children.4" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Access, Import»" size="107,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,123" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="162,209"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.1" name="Loaner" location="135,585" size="143,139" id="testmysql/Loaner">
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="loanerContact" id="testmysql/Loaner#loanerContact"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanerID" id="testmysql/Loaner#loanerID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanerName" id="testmysql/Loaner#loanerName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="phoneNumber" id="testmysql/Loaner#phoneNumber"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="114,18">
+      <children xsi:type="editmodel:MethodEditModel" name="modifyLoanerInfo" id="testmysql/Loaner#modifyLoanerInfo(Ljava.lang.String;Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.4/@sourceConnections.0" name="Borrower" location="135,390" size="124,121" id="testmysql/Borrower">
+    <children xsi:type="editmodel:CompartmentEditModel" size="100,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="testmysql/Borrower#name"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="riskBorrower" id="testmysql/Borrower#riskBorrower"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="101,36">
+      <children xsi:type="editmodel:MethodEditModel" name="Borrower" id="testmysql/Borrower#Borrower()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBorrowerID" id="testmysql/Borrower#getBorrowerID()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="Loan" location="484,391" size="162,355" id="testmysql/Loan">
+    <children xsi:type="editmodel:CompartmentEditModel" size="139,234">
+      <children xsi:type="editmodel:AttributeEditModel" name="borrowerID" id="testmysql/Loan#borrowerID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="date" id="testmysql/Loan#date"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanAmount" id="testmysql/Loan#loanAmount"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanID" id="testmysql/Loan#loanID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanPeriod" id="testmysql/Loan#loanPeriod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanRate" id="testmysql/Loan#loanRate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanRateType" id="testmysql/Loan#loanRateType"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanRisk" id="testmysql/Loan#loanRisk"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanType" id="testmysql/Loan#loanType"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="loanerID" id="testmysql/Loan#loanerID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mortgageProperty" id="testmysql/Loan#mortgageProperty"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="saleValue" id="testmysql/Loan#saleValue"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="situation" id="testmysql/Loan#situation"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="118,72">
+      <children xsi:type="editmodel:MethodEditModel" name="CalculateLoanRisk" id="testmysql/Loan#CalculateLoanRisk()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Loan" id="testmysql/Loan#Loan(IFLjava.lang.String;Ljava.lang.String;ILtestmysql.Loaner;Ltestmysql.Borrower;Ljava.lang.String;FLjava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="calculateSale" id="testmysql/Loan#calculateSale()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="modifyLoanInfo" id="testmysql/Loan#modifyLoanInfo(IFLjava.lang.String;Ljava.lang.String;ILtestmysql.Loaner;Ltestmysql.Borrower;Ljava.lang.String;FLjava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="testmysql/Loan-Standard::Call->testmysql/Borrower*testmysql/Loan-Soyatec::Import->testmysql/Borrower" source="//@children.4" target="//@children.3" targetEnd="//@children.4/@sourceConnections.0/@children.2" label="//@children.4/@sourceConnections.0/@children.0" sourceEnd="//@children.4/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,60" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="124,61"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="testmysql/Loan-Standard::Call->testmysql/Loaner*testmysql/Loan-Soyatec::Import->testmysql/Loaner" source="//@children.4" target="//@children.2" targetEnd="//@children.4/@sourceConnections.1/@children.2" label="//@children.4/@sourceConnections.1/@children.0" sourceEnd="//@children.4/@sourceConnections.1/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Call, Import»" size="64,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,263" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="143,69"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=4;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

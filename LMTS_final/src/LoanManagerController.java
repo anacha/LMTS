@@ -7,13 +7,21 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.ListIterator;
-import testmysql.LoanPortfolio;
+
+import view.ExceptionWindow;
+import view.MessageWindow;
+import view.ValidateChangesWindow;
+
+import model.LoanPortfolio;
 /**
- *
- * @author Nikos
+ * @author   Nikos
  */
 public class LoanManagerController {
 
+    /**
+	 * @uml.property  name="lp"
+	 * @uml.associationEnd  
+	 */
     private LoanPortfolio lp = new LoanPortfolio();
 
     public LoanManagerController(){
@@ -33,7 +41,8 @@ public class LoanManagerController {
 
     }
 
-    public void doDeleteLoaner(int id){
+    @SuppressWarnings("unchecked")
+	public void doDeleteLoaner(int id){
 
          ArrayList<String> QueryResult = new ArrayList<String>();
         String d_str="Select* from loan,loaner,l_provides_l where p_loanID=loanID and p_loanerID=loanerID and  loanerID =" + id ;
@@ -65,7 +74,7 @@ public class LoanManagerController {
         }
     }
 
- @SuppressWarnings("unchecked")
+ @SuppressWarnings({ "unchecked", "rawtypes" })
     public ArrayList doViewArchive(String array, String value, boolean sf) {
          ArrayList<String> QueryResult = new ArrayList<String>();
 
@@ -97,7 +106,8 @@ public class LoanManagerController {
 
 
 
-    public ArrayList<String> doSort(String choice,int mode) {
+    @SuppressWarnings("unchecked")
+	public ArrayList<String> doSort(String choice,int mode) {
         String str=null;
         ArrayList<String> QueryResult=new ArrayList<String>();
         str="SELECT Amount,Rate,l_date,B_name,L_name,L_type FROM LOAN,l_has_b,l_provides_l,Borrower,Loaner where loanid=h_loanID and h_bID=b_ID and loanID=p_loanID and p_loanerID=loanerID ORDER BY ";
@@ -115,7 +125,8 @@ public class LoanManagerController {
     
     
 
-    public ArrayList<String> doAskReport(String Value, String ListValue, String FunctionValue, String IncFrom, String IncTo, String ExFrom, String ExTo, String Txt) {
+    @SuppressWarnings("unchecked")
+	public ArrayList<String> doAskReport(String Value, String ListValue, String FunctionValue, String IncFrom, String IncTo, String ExFrom, String ExTo, String Txt) {
         ArrayList<String> QueryResult=new ArrayList<String>();
         String str = null;
         System.out.println(Value);
@@ -545,7 +556,8 @@ public class LoanManagerController {
     }
 
 
-    public ArrayList<String> doOrganize(String ListValue, String IncFrom, String IncTo, String ExFrom, String ExTo, String selection) {
+    @SuppressWarnings("unchecked")
+	public ArrayList<String> doOrganize(String ListValue, String IncFrom, String IncTo, String ExFrom, String ExTo, String selection) {
         ArrayList<String> QueryResult=new ArrayList<String>();
         String str = null;
 
@@ -804,7 +816,8 @@ public class LoanManagerController {
    }
 
 
-    public ArrayList<String> doSearch(String A,String R,String RD,String B,String L,String LT) {
+    @SuppressWarnings("unchecked")
+	public ArrayList<String> doSearch(String A,String R,String RD,String B,String L,String LT) {
         int i=0,f1=0,f2=0;
         ArrayList<String> query_args = new ArrayList<String>();
         ArrayList<String> QueryResult=new ArrayList<String>();
@@ -949,7 +962,8 @@ public class LoanManagerController {
         return QueryResult;
     }
 
-    public void doUpdatePortfolio(File selectedFile, BufferedReader reader) throws IOException{
+    @SuppressWarnings("unchecked")
+	public void doUpdatePortfolio(File selectedFile, BufferedReader reader) throws IOException{
         String fileName = selectedFile.getName().toString();
         String SearchQuery = null,s_borrower=null,s_loan=null ;
         ArrayList<String> QueryResult = new ArrayList<String>();
@@ -991,7 +1005,8 @@ public class LoanManagerController {
         while (!inLine.equals("END"))
         {
             String tmp=null;
-            String b[]= new String[11];
+            @SuppressWarnings("unused")
+			String b[]= new String[11];
             String a[]= new String[3];
             int num_of_ok_loans = 0,num_of_d_loans = 0,num_of_fd_loans=0;
             //int danger=50;
@@ -1186,7 +1201,8 @@ public class LoanManagerController {
     }
 
 
-    public ArrayList<String> packageLoanAutoSearch(String q){
+    @SuppressWarnings("unchecked")
+	public ArrayList<String> packageLoanAutoSearch(String q){
         ArrayList<String> QueryResult = new ArrayList<String>();
 
         QueryResult = lp.Do_DB_Query(q);
@@ -1194,8 +1210,9 @@ public class LoanManagerController {
     }
 
 
-    public ArrayList<String> packageLoadLoanList(){
-        int j,i;
+    @SuppressWarnings("unchecked")
+	public ArrayList<String> packageLoadLoanList(){
+//        int j=0,i=0;
         ArrayList<String> QueryResult = new ArrayList<String>();
 
         String str="SELECT loanID,amount,rate,rate_type,l_date,l_period,l_type,sale_value,situation,l_risk,mortgage_prop FROM Loan WHERE preselected = false";
@@ -1205,7 +1222,8 @@ public class LoanManagerController {
 
     }
 
-    public ArrayList<String> doOptimization(String minProfit, String maxRisk, String repPeriod,boolean emptyTable2,String tmpArr[]) {
+    @SuppressWarnings("unchecked")
+	public ArrayList<String> doOptimization(String minProfit, String maxRisk, String repPeriod,boolean emptyTable2,String tmpArr[]) {
         ArrayList<String> QueryResult = new ArrayList<String>();
         String str = null;
         if(emptyTable2 == true)
